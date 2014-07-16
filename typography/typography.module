@@ -1,0 +1,180 @@
+<?php
+/**
+ * implements hook_menu()
+ */
+function typography_menu() {
+	$items = array();
+	
+	$items['typography'] = array(
+		'title' => 'Typography Test',
+		'page callback' => 'typography_show',
+		'access callback' => TRUE,
+	);
+	
+	return $items;
+}
+
+
+function typography_show() {
+	return '<h1>This is a Heading 1</h1>
+<p>Wisi sed pede Phasellus Vestibulum elit consequat consequat eu pellentesque metus. Laoreet Vestibulum pharetra pede mattis nunc dapibus id magna a dictumst. Nunc cursus sem et pretium sapien eget consectetuer malesuada Phasellus Curabitur.</p>
+<h1 class="title">This is a Heading 1 title class</h1>
+<p>Wisi sed pede Phasellus Vestibulum elit consequat consequat eu pellentesque metus. Laoreet Vestibulum pharetra pede mattis nunc dapibus id magna a dictumst. Nunc cursus sem et pretium sapien eget consectetuer malesuada Phasellus Curabitur.</p>
+<h2>This is a Heading 2</h2>
+<p>Wisi sed pede Phasellus Vestibulum elit consequat consequat eu pellentesque metus. Laoreet Vestibulum pharetra pede mattis nunc dapibus id magna a dictumst. Nunc cursus sem et pretium sapien eget consectetuer malesuada Phasellus Curabitur.</p>
+<h2 class="title">This is a Heading 2 title class</h2>
+<p>Wisi sed pede Phasellus Vestibulum elit consequat consequat eu pellentesque metus. Laoreet Vestibulum pharetra pede mattis nunc dapibus id magna a dictumst. Nunc cursus sem et pretium sapien eget consectetuer malesuada Phasellus Curabitur.</p>
+<h2 class="title"><a href="#">This is a linked Heading 2 title class</a></h2>
+<p>Wisi sed pede Phasellus Vestibulum elit consequat consequat eu pellentesque metus. Laoreet Vestibulum pharetra pede mattis nunc dapibus id magna a dictumst. Nunc cursus sem et pretium sapien eget consectetuer malesuada Phasellus Curabitur.</p>
+<h3>This is a Heading 3</h3>
+<p>Wisi sed pede Phasellus Vestibulum elit consequat consequat eu pellentesque metus. Laoreet Vestibulum pharetra pede mattis nunc dapibus id magna a dictumst. Nunc cursus sem et pretium sapien eget consectetuer malesuada Phasellus Curabitur.</p>
+<h4>This is a Heading 4</h4>
+<p>Wisi sed pede Phasellus Vestibulum elit consequat consequat eu pellentesque metus. Laoreet Vestibulum pharetra pede mattis nunc dapibus id magna a dictumst. Nunc cursus sem et pretium sapien eget consectetuer malesuada Phasellus Curabitur.</p>
+<p>Wisi sed pede Phasellus Vestibulum elit consequat consequat eu pellentesque metus. Laoreet Vestibulum pharetra pede mattis nunc dapibus id magna a dictumst. Nunc cursus sem et pretium sapien eget consectetuer malesuada Phasellus Curabitur.</p>
+<h5>This is a Heading 5</h5>
+<p>Wisi sed pede Phasellus Vestibulum elit consequat consequat eu pellentesque metus. Laoreet Vestibulum pharetra pede mattis nunc dapibus id magna a dictumst. Nunc cursus sem et pretium sapien eget consectetuer malesuada Phasellus Curabitur.</p>
+<h6>This is a Heading 6</h6>
+<p>Wisi sed pede Phasellus Vestibulum elit consequat consequat eu pellentesque metus. Laoreet Vestibulum pharetra pede mattis nunc dapibus id magna a dictumst. Nunc cursus sem et pretium sapien eget consectetuer malesuada Phasellus Curabitur.</p>
+<h2>Drupal\'s messages</h2>
+<div id="content-help" class="content-help block">
+  <div id="content-help-inner" class="content-help-inner inner">
+    <div class="help">
+      <p>Sample help message. Modules are plugins that extend Drupal\'s core functionality. Enable modules by selecting the <em>Enabled</em> checkboxes below and clicking the <em>Save configuration</em> button. Once a module is enabled, new '.l('permissions', 'admin/people/permissions').' may be available.</p>
+    </div>
+  </div>
+</div>
+<div id="content-messages" class="content-messages block">
+  <div id="content-messages-inner" class="content-messages-inner inner">
+    <div class="messages status">Sample status message. Page <em>Typography</em> has been updated.</div>
+    <div class="messages error">Sample error message. There is a security update available for your version of Drupal. To ensure the security of your server, you should update immediately! See the '.l('available updates', 'admin/reports/updates').' page for more information.</div>
+    <div class="messages warning">Sample warning message. There are updates available for one or more of your modules or themes. To ensure the proper functioning of your site, you should update as soon as possible. See the '.l('available updates', 'admin/reports/updates').' page for more information.</div>
+  </div>
+</div>
+<h2>Code tags</h2>
+<p><code>#header h1 a {<br>
+  display: block;<br>
+  height: 80px;<br>
+  width: 300px;<br>
+  }</code></p>
+<h2>Strong Text</h2>
+<p>This is a test of <strong>strong text</strong> so it should appear bold.</p>
+<h2>Italic Text</h2>
+<p>This is a test of <em>italic text</em> so it should appear in italics.</p>
+<h2>Blockquote</h2>
+<blockquote>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+</blockquote>
+<h2>Paragraph With Links</h2>
+<p>Lorem ipsum dolor sit amet, <a href="#">consectetuer adipiscing</a> elit. Donec odio. Quisque volutpat mattis eros. <a href="#">Nullam malesuada</a> erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+<h2>Ordered List</h2>
+<ol>
+  <li>This is a sample <strong>Ordered List</strong>.</li>
+  <li>Lorem ipsum dolor sit amet consectetuer.</li>
+  <li>Condimentum quis.</li>
+  <li>Congue Quisque augue elit dolor.
+    <ol>
+      <li>Something goes here.</li>
+      <li>And another here</li>
+      <li>Then one more</li>
+    </ol>
+  </li>
+  <li>Congue Quisque augue elit dolor nibh.</li>
+</ol>
+<h2>Unordered List</h2>
+<ul>
+  <li>This is a sample <strong>Unordered List</strong>.</li>
+  <li>Condimentum quis.</li>
+  <li>Congue Quisque augue elit dolor.
+    <ul>
+      <li>Something goes here.</li>
+      <li>And another here
+        <ul>
+          <li>Something here as well</li>
+          <li>Something here as well</li>
+          <li>Something here as well</li>
+        </ul>
+      </li>
+      <li>Then one more</li>
+    </ul>
+  </li>
+  <li>Nunc cursus sem et pretium sapien eget.</li>
+</ul>
+<h2>Fieldset</h2>
+<p>&nbsp;</p>
+<fieldset>
+<legend>Account information</legend>
+</fieldset>
+<p>&nbsp;</p>
+<h2>Form elements</h2>
+<form id="contact-mail-page" action="#" method="post" accept-charset="UTF-8">
+  <div id="edit-name-wrapper" class="form-item">
+    <label for="edit-name">Text field label: <span class="form-required">*</span></label>
+    <input id="edit-name" class="form-text required" type="text" name="name" value="admin" size="60" maxlength="255">
+    <br>
+    <div class="description">This is the description for the form element above.</div>
+  </div>
+  <div id="edit-message-wrapper" class="form-item">
+    <label for="edit-message">Text area: <span class="form-required">*</span></label>
+    <textarea id="edit-message" class="form-textarea resizable required textarea-processed" name="message" rows="5" cols="60"></textarea>
+  </div>
+</form>
+<p>&nbsp;</p>
+<div id="edit-copy-wrapper" class="form-item">
+  <label class="option" for="edit-copy">
+  <input id="edit-copy" class="form-checkbox" type="checkbox" name="copy" value="1">
+  Label for a checkbox.</label>
+</div>
+<p>
+  <input id="edit-submit" class="form-submit" type="submit" name="op" value="Submit button">
+</p>
+<h2>Table</h2>
+<table id="forum-17">
+  <thead>
+    <tr>
+      <th>Forum</th>
+      <th>Topics</th>
+      <th>Posts</th>
+      <th>Last post</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr id="forum-list-8" class="odd">
+      <td class="forum"><div class="name"><a href="https://drupal.org/forum">News and announcements</a></div>
+        <div class="description">For news and announcements to the Drupal community at large.</div></td>
+      <td class="topics">1763<br>
+        <a href="https://drupal.org/forum/18#new">18 new</a></td>
+      <td class="posts">18926</td>
+      <td class="last-reply">8 hours 19 min ago<br>
+        by <a title="View user profile." href="https://drupal.org/user/49344">Ryan Szrama</a></td>
+    </tr>
+    <tr id="forum-list-2" class="even">
+      <td class="forum"><div class="name"><a href="https://drupal.org/forum/2">General discussion</a></div>
+        <div class="description">For less technical discussions about the Drupal project. Not for support questions!</div></td>
+      <td class="topics">25704<br>
+        <a href="https://drupal.org/forum/2#new">292 new</a></td>
+      <td class="posts">98651</td>
+      <td class="last-reply">5 min 9 sec ago<br>
+        by <a title="View user profile." href="https://drupal.org/user/298892">polluxmr2</a></td>
+    </tr>
+    <tr id="forum-list-25" class="odd">
+      <td class="forum"><div class="name"><a href="https://drupal.org/forum/25">Drupal showcase</a></div>
+        <div class="description">Showcase your site to others, maybe share a little about it - modules, theme, why you used Drupal.</div></td>
+      <td class="topics">4660<br>
+        <a href="https://drupal.org/forum/25#new">52 new</a></td>
+      <td class="posts">22819</td>
+      <td class="last-reply">9 hours 20 min ago<br>
+        by <a title="View user profile." href="https://drupal.org/user/142763">Thomasr976</a></td>
+    </tr>
+    <tr id="forum-list-28" class="even">
+      <td class="forum"><div class="name"><a href="https://drupal.org/forum/28">Events</a></div>
+        <div class="description">For events, conferences and other Drupal happenings.</div></td>
+      <td class="topics">337<br>
+        <a href="https://drupal.org/forum/28#new">1 new</a></td>
+      <td class="posts">1554</td>
+      <td class="last-reply">3 weeks 13 hours ago<br>
+        by <a title="View user profile." href="https://drupal.org/user/36762">greggles</a></td>
+    </tr>
+  </tbody>
+</table>
+';
+}
