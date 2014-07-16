@@ -11,4 +11,5 @@ INSTALLING
 2. Navigate to Administration -> Modules and enable the module.
 
 CREDITS
+
 Sridhar - sridhar@signature.co.in
